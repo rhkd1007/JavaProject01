@@ -1,5 +1,6 @@
 package baskinrobbins;
 
+import java.awt.Color;
 import java.awt.Container;
 import java.awt.Font;
 import java.awt.GridLayout;
@@ -10,13 +11,16 @@ import java.awt.event.MouseListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 public class JFrameTest extends JFrame implements ActionListener,MouseListener {
+	
+	BaskinRobbinsGame brGame = new BaskinRobbinsGame();
 	
 	static int buttonNumber = 5;
 	static JButton buttonList[] = new JButton[buttonNumber];
 	static String strList[]= {"게임 시작","다른 숫자","규칙 설명","전적 확인","게임 종료"};
-	
+
 	JFrameTest()
 	{
 		setTitle("BaskinRobbins 31 Game");
@@ -41,8 +45,17 @@ public class JFrameTest extends JFrame implements ActionListener,MouseListener {
 
 	@Override
 	public void mouseClicked(MouseEvent e) {
-		// TODO Auto-generated method stub
+		System.out.println("클릭확인중.");
+		if(e.getSource()==JButton("게임 종료")) {
+			System.out.println("게임 종료 클릭후.");
+			
+		}
 		
+	}
+
+	private Object JButton(String string) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
