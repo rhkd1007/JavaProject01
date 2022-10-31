@@ -5,3 +5,6 @@ Java 예제: 배스킨라빈스 31 (먼저 31을 외치면 지는 게임)
 
 Java Swing 기초
 https://k4keye.tistory.com/55?category=783810
+
+Java Swing Layout 참고
+https://improver.tistory.com/153?category=621955
