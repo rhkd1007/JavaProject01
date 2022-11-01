@@ -89,8 +89,10 @@ public class JFrameTest extends JFrame implements ActionListener, MouseListener,
 		}else if(e.getSource()==j3) {
 			JButton j3 = (JButton)e.getSource();
 			if(j3.getText() == "규칙 설명") {
-				j3.setText("상대방과 번호를 1부터 세어 31을 얘기하면 지는 게임입니다. \r\n 숫자는 최대 3번만 셀 수 있습니다.");
-				j3.setFont(new Font("SansSerif",Font.BOLD,14));
+				j3.setText("<html>상대방과 번호를 1부터 숫자를세어 31을 얘기하면 지는 게임입니다."
+						+ "<br>한턴 당 숫자는 최대 3번만 셀 수 있습니다."
+						+ "<br>31이 아닌 다른 숫자로 게임을 하려면 다른 숫자를 클릭해 주세요.</html>");
+				j3.setFont(new Font("SansSerif",Font.BOLD,20));
 			}else {j3.setText("규칙 설명");}
 		}else if(e.getSource()==j4) {
 			JButton j4 = (JButton)e.getSource();
