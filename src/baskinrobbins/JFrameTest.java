@@ -93,7 +93,8 @@ public class JFrameTest extends JFrame implements ActionListener, MouseListener,
 						+ "<br>한턴 당 숫자는 최대 3번만 셀 수 있습니다."
 						+ "<br>31이 아닌 다른 숫자로 게임을 하려면 다른 숫자를 클릭해 주세요.</html>");
 				j3.setFont(new Font("SansSerif",Font.BOLD,20));
-			}else {j3.setText("규칙 설명");}
+			}else {j3.setText("규칙 설명");
+			j3.setFont(new Font("SansSerif",Font.BOLD,40));}
 		}else if(e.getSource()==j4) {
 			JButton j4 = (JButton)e.getSource();
 			if(j4.getText() == "전적 확인") {
