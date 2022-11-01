@@ -1,6 +1,7 @@
 package baskinrobbins;
 
 import java.awt.Container;
+import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -10,11 +11,11 @@ import java.awt.event.MouseListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-public class JFrameTest extends JFrame implements ActionListener, MouseListener {
+public class JFrameTest extends JFrame implements ActionListener, MouseListener, BaskinGame {
 
 	BaskinRobbinsGame brGame = new BaskinRobbinsGame();
 	
-
+	static int playnumber=0;
 
 	static int buttonNumber = 5;
 	static JButton buttonList[] = new JButton[buttonNumber];
@@ -54,6 +55,12 @@ public class JFrameTest extends JFrame implements ActionListener, MouseListener 
 		j3.addActionListener(this);
 		j4.addActionListener(this);
 		j5.addActionListener(this);
+		
+		j1.setFont(new Font("SansSerif",Font.BOLD,40));
+		j2.setFont(new Font("SansSerif",Font.BOLD,40));
+		j3.setFont(new Font("SansSerif",Font.BOLD,40));
+		j4.setFont(new Font("SansSerif",Font.BOLD,40));
+		j5.setFont(new Font("SansSerif",Font.BOLD,40));
 
 		c.add(j1);
 		c.add(j2);
@@ -119,6 +126,12 @@ public class JFrameTest extends JFrame implements ActionListener, MouseListener 
 
 	@Override
 	public void mouseExited(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void baskingame() {
 		// TODO Auto-generated method stub
 		
 	}
