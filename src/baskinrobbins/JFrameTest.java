@@ -68,6 +68,7 @@ public class JFrameTest extends JFrame implements ActionListener, MouseListener,
 		c.add(j4);
 		c.add(j5);
 
+		
 		setVisible(true);
 
 	}
