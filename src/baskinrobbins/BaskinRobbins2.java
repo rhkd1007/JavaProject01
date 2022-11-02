@@ -2,9 +2,11 @@ package baskinrobbins;
 
 import java.util.Scanner;
 
-public class BaskinRobbins2 extends BaskinRobbinsGame {
+public class BaskinRobbins2 extends BaskinRobbinsGame implements BaskinGame{
     
     static Scanner s = new Scanner(System.in);
+    
+    static int playnumber = 0;
  
     public static void main(String[] args) {
     	BaskinRobbinsGame brGame = new BaskinRobbinsGame();
